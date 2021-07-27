@@ -22,7 +22,7 @@ import PropsContext, {
 } from './PropsContext';
 import {MinUidProvider} from './MinUidContext';
 import {MaxUidProvider} from './MaxUidContext';
-import { SpeakerUidProvider, SpeakerUiProvider } from 'agora-rn-uikit/src/SpeakerUiContext';
+import { SpeakerUiProvider } from './SpeakerUiContext';
 
 const initialState: UidStateInterface = {
   min: [],
