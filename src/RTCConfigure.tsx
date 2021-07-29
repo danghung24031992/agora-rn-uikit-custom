@@ -210,10 +210,10 @@ const RtcConfigure: React.FC<Partial<RtcPropsInterface>> = (props) => {
 
   useEffect(() => {
     async function init() {
-      if (Platform.OS === 'android') {
-        //Request required permissions from Android
-        await requestCameraAndAudioPermission();
-      }
+      // if (Platform.OS === 'android') {
+      //   //Request required permissions from Android
+      //   await requestCameraAndAudioPermission();
+      // }
       try {
         engine.current = await RtcEngine.create(rtcProps.appId);
         console.log(engine.current);
