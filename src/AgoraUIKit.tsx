@@ -10,8 +10,6 @@ import {PropsProvider, PropsInterface} from './PropsContext';
 import styles from './Style';
 import LocalControls from './Controls/LocalControls';
 
-// import console = require('console');
-
 const AgoraUIKit: React.FC<PropsInterface> = (props) => {
   return (
     <PropsProvider value={props}>
@@ -19,18 +17,15 @@ const AgoraUIKit: React.FC<PropsInterface> = (props) => {
         <RtcConfigure>
           <MaxUidConsumer>
             {(maxUsers) => {
-              console.log("🚀 ~ file: AgoraUIKit.tsx ~ line 33 ~ maxUsers", maxUsers)
               return (<MaxVideoView user={maxUsers[0]} key={maxUsers[0].uid} />)
             }}
           </MaxUidConsumer>
-
           <ScrollView
             showsHorizontalScrollIndicator={false}
             horizontal={true}
             style={styles.minContainer}>
             <MinUidConsumer>
               {(minUsers) => {
-                console.log("🚀 ~ file: AgoraUIKit.tsx ~ line 33 ~ minUsers", minUsers)
                 return minUsers.map((user) => (
                   <MinVideoView user={user} key={user.uid} />
                 ))

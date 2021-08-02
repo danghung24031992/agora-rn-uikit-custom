@@ -41,7 +41,7 @@ export default StyleSheet.create({
     padding: 0,
     margin: 0,
     width: dimensions.width,
-    scaleX:-1
+    // scaleX:-1
   },
   Controls: {
     position: 'absolute',
