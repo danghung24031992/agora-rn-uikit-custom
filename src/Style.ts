@@ -36,11 +36,12 @@ export default StyleSheet.create({
   },
   minContainer: {
     position: 'absolute',
-    top: 0,
+    top: 40,
     left: 0,
     padding: 0,
     margin: 0,
     width: dimensions.width,
+    scaleX:-1
   },
   Controls: {
     position: 'absolute',
